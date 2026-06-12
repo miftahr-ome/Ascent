@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ascent</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise"></div>
+
+
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">Ascent</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <div class="nav-links">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">Available for work</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <a href="#work" class="mobile-link">Work</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="heroCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>Spark</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" data-index="0">Building</span>
+        <span class="title-line accent" data-index="1">Digital</span>
+        <span class="title-line" data-index="2">Experiences</span>
+      </h1>
+      <p class="hero-sub">
+        I design and develop products that live at the intersection of function and feeling — turning complex problems into elegant interfaces.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">
+          <span>See My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-number" data-count="47">0</span>
+          <span class="meta-label">Projects Shipped</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-number" data-count="6">0</span>
+          <span class="meta-label">Years Building</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-number" data-count="28">0</span>
+          <span class="meta-label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>React</span><span class="dot">◆</span>
+        <span>Node.js</span><span class="dot">◆</span>
+        <span>TypeScript</span><span class="dot">◆</span>
+        <span>Next.js</span><span class="dot">◆</span>
+        <span>Three.js</span><span class="dot">◆</span>
+        <span>PostgreSQL</span><span class="dot">◆</span>
+        <span>MongoDB</span><span class="dot">◆</span>
+        <span>Docker</span><span class="dot">◆</span>
+        <span>AWS</span><span class="dot">◆</span>
+        <span>GraphQL</span><span class="dot">◆</span>
+        <span>Figma</span><span class="dot">◆</span>
+        <span>GSAP</span><span class="dot">◆</span>
+        <span>React</span><span class="dot">◆</span>
+        <span>Node.js</span><span class="dot">◆</span>
+        <span>TypeScript</span><span class="dot">◆</span>
+        <span>Next.js</span><span class="dot">◆</span>
+        <span>Three.js</span><span class="dot">◆</span>
+        <span>PostgreSQL</span><span class="dot">◆</span>
+        <span>MongoDB</span><span class="dot">◆</span>
+        <span>Docker</span><span class="dot">◆</span>
+        <span>AWS</span><span class="dot">◆</span>
+        <span>GraphQL</span><span class="dot">◆</span>
+        <span>Figma</span><span class="dot">◆</span>
+        <span>GSAP</span><span class="dot">◆</span>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="work" id="work">
+    <div class="section-header">
+      <span class="section-tag">Selected Work</span>
+      <h2 class="section-title">Projects that <em>matter</em></h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project project-featured" data-color="#7C3AED">
+        <div class="project-image">
+          <div class="project-placeholder" style="--bg: #7C3AED; --bg2: #4F46E5;">
+            <div class="placeholder-ui">
+              <div class="ui-bar"></div>
+              <div class="ui-cards">
+                <div class="ui-card"></div>
+                <div class="ui-card ui-card-tall"></div>
+                <div class="ui-card"></div>
+              </div>
+              <div class="ui-chart">
+                <div class="chart-bar" style="height:60%"></div>
+                <div class="chart-bar" style="height:85%"></div>
+                <div class="chart-bar" style="height:45%"></div>
+                <div class="chart-bar" style="height:70%"></div>
+                <div class="chart-bar" style="height:95%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="project-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7,7 17,7 17,17"/></svg></a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-year">2024</span>
+            <span class="project-type">SaaS Dashboard</span>
+          </div>
+          <h3 class="project-title">FinFlow Analytics</h3>
+          <p class="project-desc">A real-time financial analytics dashboard with live market data, AI-powered insights, and customizable widget system for enterprise teams.</p>
+          <div class="project-tags">
+            <span>React</span><span>D3.js</span><span>Node.js</span><span>WebSocket</span>
+          </div>
+          <a href="#" class="project-link">Case Study →</a>
+        </div>
+      </article>
+
+      <article class="project" data-color="#059669">
+        <div class="project-image">
+          <div class="project-placeholder" style="--bg: #059669; --bg2: #0D9488;">
+            <div class="placeholder-ui">
+              <div class="ui-phone">
+                <div class="phone-screen">
+                  <div class="phone-header"></div>
+                  <div class="phone-content">
+                    <div class="phone-item"></div>
+                    <div class="phone-item short"></div>
+                    <div class="phone-item"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="project-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7,7 17,7 17,17"/></svg></a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-year">2024</span>
+            <span class="project-type">Mobile App</span>
+          </div>
+          <h3 class="project-title">GreenPath</h3>
+          <p class="project-desc">Carbon footprint tracker with gamified sustainability challenges, community leaderboards, and personalized eco-impact reports.</p>
+          <div class="project-tags">
+            <span>React Native</span><span>Firebase</span><span>ML Kit</span>
+          </div>
+          <a href="#" class="project-link">Case Study →</a>
+        </div>
+      </article>
+
+      <article class="project" data-color="#DC2626">
+        <div class="project-image">
+          <div class="project-placeholder" style="--bg: #DC2626; --bg2: #DB2777;">
+            <div class="placeholder-ui">
+              <div class="ui-globe">
+                <div class="globe-ring"></div>
+                <div class="globe-ring ring2"></div>
+                <div class="globe-ring ring3"></div>
+                <div class="globe-dot d1"></div>
+                <div class="globe-dot d2"></div>
+                <div class="globe-dot d3"></div>
+                <div class="globe-line l1"></div>
+                <div class="globe-line l2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="project-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7,7 17,7 17,17"/></svg></a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-year">2023</span>
+            <span class="project-type">Data Visualization</span>
+          </div>
+          <h3 class="project-title">GlobalPulse</h3>
+          <p class="project-desc">Interactive 3D globe visualizing real-time global news sentiment analysis with NLP-powered trend detection across 50+ countries.</p>
+          <div class="project-tags">
+            <span>Three.js</span><span>Python</span><span>NLP</span><span>WebGL</span>
+          </div>
+          <a href="#" class="project-link">Case Study →</a>
+        </div>
+      </article>
+
+      <article class="project" data-color="#D97706">
+        <div class="project-image">
+          <div class="project-placeholder" style="--bg: #D97706; --bg2: #B45309;">
+            <div class="placeholder-ui">
+              <div class="ui-ecom">
+                <div class="ecom-grid">
+                  <div class="ecom-card"></div>
+                  <div class="ecom-card"></div>
+                  <div class="ecom-card"></div>
+                  <div class="ecom-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="project-cta">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7,7 17,7 17,17"/></svg></a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-year">2023</span>
+            <span class="project-type">E-Commerce</span>
+          </div>
+          <h3 class="project-title">Artisan Market</h3>
+          <p class="project-desc">Curated handcraft marketplace with Spark product preview, dynamic pricing engine, and integrated seller analytics portal.</p>
+          <div class="project-tags">
+            <span>Next.js</span><span>Stripe</span><span>Prisma</span>
+          </div>
+          <a href="#" class="project-link">Case Study →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Code is my <em>craft</em></h2>
+        <p>a developer with a designer's eye. I've spent the last 2 years building products for startups, agencies, and global enterprises. My work lives where technical precision meets visual storytelling.</p>
+        <p>When I'm not coding, I'm sketching UI concepts, contributing to open-source, or deep in a rabbit hole about WebGL shaders and computational design.</p>
+        <div class="about-values">
+          <div class="value-item">
+            <span class="value-icon">⚡</span>
+            <div>
+              <strong>Performance First</strong>
+              <p>Sub-second load times, 60fps animations, Core Web Vitals obsession.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">♿</span>
+            <div>
+              <strong>Built for Everyone</strong>
+              <p>WCAG 2.1 AA compliance, keyboard navigation, screen reader support.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">🎯</span>
+            <div>
+              <strong>Intent Over Decoration</strong>
+              <p>Every pixel has a purpose. Design decisions rooted in user behavior.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary">
+          <span>Download CV</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+      <div class="about-visual">
+        <div class="about-card">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-avatar">Asc</div>
+            <div class="card-badges">
+              <div class="badge">
+                <span class="badge-icon">🏆</span>
+                <div><strong>Awwwards Nominee</strong><small>2024</small></div>
+              </div>
+              <div class="badge">
+                <span class="badge-icon">🚀</span>
+                <div><strong>Product Hunt #1</strong><small>3x Featured</small></div>
+              </div>
+              <div class="badge">
+                <span class="badge-icon">⭐</span>
+                <div><strong>GitHub Stars</strong><small>2.4k+</small></div>
+              </div>
+            </div>
+            <div class="card-languages">
+              <div class="lang-bar">
+                <span>JavaScript</span>
+                <div class="bar-track"><div class="bar-fill" style="--w:92%"></div></div>
+                <span>92%</span>
+              </div>
+              <div class="lang-bar">
+                <span>TypeScript</span>
+                <div class="bar-track"><div class="bar-fill" style="--w:85%"></div></div>
+                <span>85%</span>
+              </div>
+              <div class="lang-bar">
+                <span>Python</span>
+                <div class="bar-track"><div class="bar-fill" style="--w:70%"></div></div>
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="section-header">
+      <span class="section-tag">Tech Stack</span>
+      <h2 class="section-title">Tools of the <em>trade</em></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <ul>
+          <li><span class="skill-dot" style="--c:#61DAFB"></span>React / Next.js</li>
+          <li><span class="skill-dot" style="--c:#3178C6"></span>TypeScript</li>
+          <li><span class="skill-dot" style="--c:#FF3E00"></span>Svelte</li>
+          <li><span class="skill-dot" style="--c:#00C4A7"></span>Vue.js</li>
+          <li><span class="skill-dot" style="--c:#FF6B6B"></span>GSAP / Framer</li>
+          <li><span class="skill-dot" style="--c:#49EF91"></span>Three.js / WebGL</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <ul>
+          <li><span class="skill-dot" style="--c:#68A063"></span>Node.js / Express</li>
+          <li><span class="skill-dot" style="--c:#3776AB"></span>Python / FastAPI</li>
+          <li><span class="skill-dot" style="--c:#E10098"></span>GraphQL</li>
+          <li><span class="skill-dot" style="--c:#FF6600"></span>REST APIs</li>
+          <li><span class="skill-dot" style="--c:#A500FF"></span>WebSockets</li>
+          <li><span class="skill-dot" style="--c:#00BEF0"></span>Redis / Caching</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Database</h3>
+        <ul>
+          <li><span class="skill-dot" style="--c:#336791"></span>PostgreSQL</li>
+          <li><span class="skill-dot" style="--c:#4DB33D"></span>MongoDB</li>
+          <li><span class="skill-dot" style="--c:#D82C20"></span>Redis</li>
+          <li><span class="skill-dot" style="--c:#FF9900"></span>DynamoDB</li>
+          <li><span class="skill-dot" style="--c:#0064A5"></span>Supabase</li>
+          <li><span class="skill-dot" style="--c:#FFCA28"></span>Firebase</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>DevOps & Tools</h3>
+        <ul>
+          <li><span class="skill-dot" style="--c:#2496ED"></span>Docker / K8s</li>
+          <li><span class="skill-dot" style="--c:#FF9900"></span>AWS</li>
+          <li><span class="skill-dot" style="--c:#F05032"></span>Git / GitHub</li>
+          <li><span class="skill-dot" style="--c:#2088FF"></span>CI/CD Pipelines</li>
+          <li><span class="skill-dot" style="--c:#A259FF"></span>Figma</li>
+          <li><span class="skill-dot" style="--c:#8B8B8B"></span>Vercel / Netlify</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonials">
+    <div class="section-header">
+      <span class="section-tag">Testimonials</span>
+      <h2 class="section-title">What people <em>say</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <blockquote class="testimonial">
+        <p>"Ascent delivered a product that genuinely impressed our investors. Not just functional — beautiful. The attention to detail in the animations and micro-interactions was next level."</p>
+        <footer>
+          <div class="testimonial-avatar">JL</div>
+          <div><strong>Jordan Lee</strong><span>CEO, FinFlow Inc.</span></div>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Hired Ascent to rebuild our e-commerce platform. We saw a 40% increase in conversion rate within the first month. The performance optimizations alone paid for the project five times over."</p>
+        <footer>
+          <div class="testimonial-avatar">SM</div>
+          <div><strong>Sarah Martinez</strong><span>Founder, Artisan Market</span></div>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"One of the few devs who actually understands design intent. Ascent doesn't just implement specs — they elevate them. The final product looked better than our Figma files."</p>
+        <footer>
+          <div class="testimonial-avatar">RP</div>
+          <div><strong>Raj Patel</strong><span>Lead Designer, Studio Nova</span></div>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's build something <em>great</em></h2>
+        <p>Whether you have a project in mind, want to collaborate, or just want to talk tech — my inbox is always open.</p>
+        <div class="contact-links">
+          <a href="mailto:miftahr.ome111@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        
+          </a>
+          <a href="https://github.com/miftahr-ome/" target="_blank" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+
+          </a>
+          <a href="https://www.linkedin.com/in/miftahur-rahman-omi-52491233b/" target="_blank" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="fname" name="name" placeholder=" " required autocomplete="off" />
+          <label for="fname">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="femail" name="email" placeholder=" " required autocomplete="off" />
+          <label for="femail">Email Address</label>
+        </div>
+        <div class="form-group">
+          <input type="text" id="fsubject" name="subject" placeholder=" " autocomplete="off" />
+          <label for="fsubject">Subject</label>
+        </div>
+        <div class="form-group">
+          <textarea id="fmessage" name="message" rows="4" placeholder=" " required></textarea>
+          <label for="fmessage">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span>Send Message</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Message sent! I'll get back to you within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="nav-logo">
+          <span class="logo-bracket">[</span>
+          <span class="logo-text">Ascent</span>
+          <span class="logo-bracket">]</span>
+        </div>
+        <p>Designed & developed with obsessive attention to detail.</p>
+      </div>
+      <div class="footer-center">
+        <p>© 2024 Ascent. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top">
+          Back to top
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function () {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+
+    var navToggle = document.getElementById('navToggle');
+    var mobileMenu = document.getElementById('mobileMenu');
+    var mobileClose = document.getElementById('mobileClose');
+
+    function openMenu() {
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      var spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+      spans[1].style.opacity = '0';
+      spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+      var spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '1';
+      spans[2].style.transform = '';
+    }
+
+    navToggle.addEventListener('click', function () {
+      if (mobileMenu.classList.contains('active')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    mobileClose.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('.mobile-link').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+
+    mobileMenu.addEventListener('click', function (e) {
+      if (e.target === mobileMenu) closeMenu();
+    });
+
+    var canvas = document.getElementById('heroCanvas');
+    var ctx = canvas.getContext('2d');
+    var particles = [];
+
+    function resizeCanvas() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', function () { resizeCanvas(); initParticles(); });
+
+    function Particle() {
+      this.reset();
+    }
+    Particle.prototype.reset = function () {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 1.5 + 0.3;
+      this.speedX = (Math.random() - 0.5) * 0.4;
+      this.speedY = (Math.random() - 0.5) * 0.4;
+      this.opacity = Math.random() * 0.5 + 0.1;
+      this.color = Math.random() > 0.7 ? '#4DFFD4' : '#6B7A99';
+    };
+    Particle.prototype.update = function () {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+    };
+    Particle.prototype.draw = function () {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.globalAlpha = this.opacity;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    };
+
+    function initParticles() {
+      particles = [];
+      for (var i = 0; i < 80; i++) particles.push(new Particle());
+    }
+    initParticles();
+
+    function drawConnections() {
+      for (var i = 0; i < particles.length; i++) {
+        for (var j = i + 1; j < particles.length; j++) {
+          var dx = particles[i].x - particles[j].x;
+          var dy = particles[i].y - particles[j].y;
+          var dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            var alpha = (1 - dist / 120) * 0.15;
+            ctx.beginPath();
+            ctx.strokeStyle = 'rgba(77,255,212,' + alpha + ')';
+            ctx.lineWidth = 0.5;
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animateCanvas() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(function (p) { p.update(); p.draw(); });
+      drawConnections();
+      requestAnimationFrame(animateCanvas);
+    }
+    animateCanvas();
+
+
+    function animateCounter(el, target) {
+      var current = 0;
+      var step = target / (1800 / 16);
+      var iv = setInterval(function () {
+        current += step;
+        if (current >= target) { current = target; clearInterval(iv); }
+        el.textContent = Math.floor(current);
+      }, 16);
+    }
+    setTimeout(function () {
+      document.querySelectorAll('.meta-number[data-count]').forEach(function (el) {
+        animateCounter(el, parseInt(el.dataset.count));
+      });
+    }, 1200);
+
+
+    var revealEls = document.querySelectorAll(
+      '.project, .skill-category, .testimonial, .value-item, .badge, .about-card, .contact-form'
+    );
+    revealEls.forEach(function (el) { el.classList.add('reveal'); });
+
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry, i) {
+        if (entry.isIntersecting) {
+          setTimeout(function () { entry.target.classList.add('visible'); }, i * 80);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function (el) { ro.observe(el); });
+
+
+    var barObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.bar-fill').forEach(function (fill) {
+            setTimeout(function () { fill.classList.add('animated'); }, 300);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+    var aboutCard = document.querySelector('.about-card');
+    if (aboutCard) barObs.observe(aboutCard);
+
+
+    var contactForm = document.getElementById('contactForm');
+    var formSuccess = document.getElementById('formSuccess');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = contactForm.querySelector('button[type="submit"]');
+        var span = btn.querySelector('span');
+        span.textContent = 'Sending...';
+        btn.disabled = true;
+        setTimeout(function () {
+          contactForm.style.display = 'none';
+          formSuccess.classList.add('visible');
+          setTimeout(function () {
+            contactForm.reset();
+            contactForm.style.display = 'flex';
+            formSuccess.classList.remove('visible');
+            btn.disabled = false;
+            span.textContent = 'Send Message';
+          }, 5000);
+        }, 1200);
+      });
+    }
+
+
+    document.querySelectorAll('.project').forEach(function (p) {
+      var color = p.dataset.color;
+      if (!color) return;
+      p.addEventListener('mouseenter', function () {
+        p.style.boxShadow = '0 24px 60px ' + color + '33';
+        p.style.borderColor = color + '44';
+      });
+      p.addEventListener('mouseleave', function () {
+        p.style.boxShadow = '';
+        p.style.borderColor = '';
+      });
+    });
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href');
+        if (id === '#') return;
+        var target = document.querySelector(id);
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+
+
+    var marqueeInner = document.querySelector('.marquee-inner');
+    if (marqueeInner) {
+      marqueeInner.addEventListener('mouseenter', function () { marqueeInner.style.animationPlayState = 'paused'; });
+      marqueeInner.addEventListener('mouseleave', function () { marqueeInner.style.animationPlayState = 'running'; });
+    }
+
+
+    window.addEventListener('scroll', function () {
+      var heroContent = document.querySelector('.hero-content');
+      if (heroContent) {
+        var y = window.scrollY;
+        heroContent.style.transform = 'translateY(' + (y * 0.15) + 'px)';
+        heroContent.style.opacity = Math.max(0, 1 - y / 600);
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
